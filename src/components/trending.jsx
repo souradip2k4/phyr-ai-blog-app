@@ -3,14 +3,16 @@ import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"
 import Link from "next/link"
 
 export function Trending({posts}) {
+
   return (
-    (<Card className="border-0 shadow-none">
+    (
+      <Card className= "border-0 shadow-none">
       <CardHeader>
         <CardTitle>Trending on AI Trends</CardTitle>
       </CardHeader>
       <CardContent className="grid gap-4">
         {posts.map((post, index) => (
-          <div key={post.id} className="flex items-start gap-4">
+          <div key={post.id} className=" flex items-start gap-4">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <Avatar className="h-6 w-6">

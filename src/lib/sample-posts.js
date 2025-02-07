@@ -21,5 +21,15 @@ export const posts = [
       handle: "alexk",
     },
     date: "5h ago",
+  },{
+    id: "3",
+    title: "Machine Learning Breakthroughs",
+    content: "New research shows promising results in self-supervised learning models...",
+    author: {
+      name: "Alex Kumar",
+      image: "/placeholder.svg",
+      handle: "alexk",
+    },
+    date: "5h ago",
   },
 ]
