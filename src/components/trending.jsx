@@ -6,14 +6,14 @@ export function Trending({posts}) {
 
   return (
     (
-      <Card className= "border-0 shadow-none">
+      <Card className= "border-2 border-muted shadow-none">
       <CardHeader>
         <CardTitle>Trending on AI Trends</CardTitle>
       </CardHeader>
       <CardContent className="grid gap-4">
         {posts.map((post, index) => (
           <div key={post.id} className=" flex items-start gap-4">
-            <div className="space-y-1">
+            <div className="space-y-1 border shadow rounded-sm p-2 w-full">
               <div className="flex items-center gap-2">
                 <Avatar className="h-6 w-6">
                   <AvatarImage src={post.author.image} alt={post.author.name}/>
