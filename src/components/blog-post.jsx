@@ -23,7 +23,7 @@ export function BlogPost({post}) {
         </CardHeader>
 
         <CardContent className="p-4 pt-0">
-          <Card className="bg-muted/50 p-2.5">
+          <Card className="bg-muted/50 p-3">
             <h2 className="text-sm text-foreground/80 pb-1.5">@{post.repost.author}</h2>
             <h3 className="font-semibold mb-2">{post.repost.title}</h3>
             <p className="text-sm text-muted-foreground">{post.repost.content}</p>
@@ -32,7 +32,7 @@ export function BlogPost({post}) {
               alt="Photo by Drew Beamer"
               height={400}
               width={600}
-              className=" rounded-md object-cover aspect-video my-3"
+              className=" rounded-md w-full object-cover aspect-video my-3"
             />
           </Card>
           <time className="text-sm text-muted-foreground mt-2 block">{post.date}</time>

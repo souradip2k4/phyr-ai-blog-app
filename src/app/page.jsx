@@ -7,18 +7,18 @@ import {trending} from "@/lib/sample-trending";
 
 export default function Home() {
   return (
-    <>
+    <div className={"w-full flex flex-col items-center justify-around px-3"}>
       <Navbar/>
-      <div className="grid grid-cols-1 md:grid-cols-[1fr,auto] gap-6 py-8 md:px-6 lg:pr-12 lg:pl-20 w-full">
-        <main className="space-y-4 md:max-w-[80%]">
+      <div className="flex gap-6 sm:gap-8 md:gap-12 py-8 w-fit">
+        <main className="space-y-4 md:max-w-[700px]">
           {posts.map((post) => (
             <BlogPost key={post.id} post={post}/>
           ))}
         </main>
-        <div className="hidden md:block w-[350px] sticky top-24 h-fit">
+        <div className="hidden md:flex max-w-[350px] sticky top-24 h-fit">
           <Trending posts={trending}/>
         </div>
       </div>
-    </>);
+    </div>);
 }
 
