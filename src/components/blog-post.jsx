@@ -24,10 +24,11 @@ export function BlogPost({post}) {
 
         <CardContent className="p-4 pt-0">
           <Card className="bg-muted/50 p-2.5">
-            <h3 className="font-semibold mb-2">{post.title}</h3>
-            <p className="text-sm text-muted-foreground">{post.content}</p>
+            <h2 className="text-sm text-foreground/80 pb-1.5">@{post.repost.author}</h2>
+            <h3 className="font-semibold mb-2">{post.repost.title}</h3>
+            <p className="text-sm text-muted-foreground">{post.repost.content}</p>
             <Image
-              src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd"
+              src={post.repost.image}
               alt="Photo by Drew Beamer"
               height={400}
               width={600}
